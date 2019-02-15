@@ -42,18 +42,18 @@ jobs:
           #- echo $DEPLOY_SERVER_KEY_HEX | xxd -r -ps >> keys/deploy.key
           #- openssl rsa -in keys/deploy.key -check -noout
           #- sfdx force:auth:jwt:grant --clientid $DEPLOY_CONSUMER_KEY --jwtkeyfile keys/deploy.key --username $DEPLOY_SFDC_USER -a deploy
-      #- run:
-      #    name: Setup Org
-      #    command: |
-      #      echo 'Running tests'
-      #      sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub20190205
-      #      echo 'Point A'
-      #      sfdx force --help
-      #      echo 'Point B'
-      #      sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
-      #      echo 'Point C'
-      #      sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
-      #      echo 'Point D'
+      - run:
+          name: Setup Org
+          command: |
+            echo 'Running tests'
+            sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub20190205
+            echo 'Point A'
+            sfdx force --help
+            echo 'Point B'
+            sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
+            echo 'Point C'
+            sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
+            echo 'Point D'
       - run:
           name: Run Apex Tests
           command: |
