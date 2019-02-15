@@ -54,6 +54,7 @@ jobs:
             echo 'Point C'
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
             echo 'Point D'
+            echo $HUB_CONSUMER_KEY
             echo $CIRCLE_BUILD_NUM
       - run:
           name: Run Apex Tests
