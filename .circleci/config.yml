@@ -49,13 +49,9 @@ jobs:
           command: |
             echo 'Running tests'
             sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub
-            echo 'Point A'
             sfdx force --help
-            echo 'Point B'
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
-            echo 'Point C'
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
-            echo 'Point D'
       - run:
           name: Run Apex Tests
           command: |
@@ -66,7 +62,7 @@ jobs:
       - run:
           name: Delete Useless Scratch Org
           command: |
-            #sfdx force:org:delete -u circle_build_$CIRCLE_BUILD_NUM -p
+            sfdx force:org:delete -u circle_build_$CIRCLE_BUILD_NUM -p
 
 ### Uncomment the following if performing deployments
 #deployment:
