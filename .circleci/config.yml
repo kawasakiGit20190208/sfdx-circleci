@@ -7,8 +7,6 @@ general:
 #       - dev # specific branch
 #       - /dev-.*/ # or regexes
 
-
-
 jobs:
   build:
     machine: true
