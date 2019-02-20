@@ -49,6 +49,7 @@ jobs:
             sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub
             sfdx force --help
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
+            sfdx force:org:list
             sfdx force:config:set defaultusername=mmScratch20190220
             #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
             sfdx force:source:push -u mmScratch20190220
