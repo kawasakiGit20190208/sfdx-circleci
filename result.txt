@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2019-03-04T08:13:22+00:00" hostname="https://energy-momentum-6396-dev-ed.cs6.my.salesforce.com/" tests="2" failures="0"  errors="0"  time="0.05">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="2"/>
+            <property name="passing" value="2"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Mar 4, 2019 8:13 AM"/>
+            <property name="testExecutionTime" value="0.05 s"/>
+            <property name="testTotalTime" value="0.05 s"/>
+            <property name="commandTime" value="6.54 s"/>
+            <property name="hostname" value="https://energy-momentum-6396-dev-ed.cs6.my.salesforce.com/"/>
+            <property name="orgId" value="00DN0000000BmUiMAK"/>
+            <property name="username" value="test-t998f7xe1rtm@example.com"/>
+            <property name="testRunId" value="707N000002eTOWK"/>
+            <property name="userId" value="005N0000006iqdAIAQ"/>
+            <property name="testRunCoverage" value="100%"/>
+            <property name="orgWideCoverage" value="100%"/>
+        </properties>
+        <testcase name="myUnitTest" classname="mytest" time="0.02">
+        </testcase>
+        <testcase name="myUnitTest2" classname="mytest" time="0.03">
+        </testcase>
+    </testsuite>
+</testsuites>
+
+9332
