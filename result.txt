@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="force.apex" timestamp="2019-03-04T08:16:12+00:00" hostname="https://momentum-page-8621-dev-ed.cs31.my.salesforce.com/" tests="2" failures="0"  errors="0"  time="0.05">
+    <testsuite name="force.apex" timestamp="2019-03-04T08:17:35+00:00" hostname="https://java-energy-879-dev-ed.cs6.my.salesforce.com/" tests="2" failures="0"  errors="0"  time="0.06">
         <properties>
             <property name="outcome" value="Passed"/>
             <property name="testsRan" value="2"/>
@@ -9,23 +9,23 @@
             <property name="skipped" value="0"/>
             <property name="passRate" value="100%"/>
             <property name="failRate" value="0%"/>
-            <property name="testStartTime" value="Mar 4, 2019 8:16 AM"/>
-            <property name="testExecutionTime" value="0.05 s"/>
-            <property name="testTotalTime" value="0.05 s"/>
-            <property name="commandTime" value="7.48 s"/>
-            <property name="hostname" value="https://momentum-page-8621-dev-ed.cs31.my.salesforce.com/"/>
-            <property name="orgId" value="00Dp00000009WQmEAM"/>
-            <property name="username" value="test-imjxybxtvkq2@example.com"/>
-            <property name="testRunId" value="707p00000137W7h"/>
-            <property name="userId" value="005p0000002wKgQAAU"/>
+            <property name="testStartTime" value="Mar 4, 2019 8:17 AM"/>
+            <property name="testExecutionTime" value="0.06 s"/>
+            <property name="testTotalTime" value="0.06 s"/>
+            <property name="commandTime" value="8.16 s"/>
+            <property name="hostname" value="https://java-energy-879-dev-ed.cs6.my.salesforce.com/"/>
+            <property name="orgId" value="00DN0000000BmV2MAK"/>
+            <property name="username" value="test-emtqfz5lc43q@example.com"/>
+            <property name="testRunId" value="707N000002eQodX"/>
+            <property name="userId" value="005N0000006fIx3IAE"/>
             <property name="testRunCoverage" value="100%"/>
             <property name="orgWideCoverage" value="100%"/>
         </properties>
         <testcase name="myUnitTest" classname="mytest" time="0.02">
         </testcase>
-        <testcase name="myUnitTest2" classname="mytest" time="0.03">
+        <testcase name="myUnitTest2" classname="mytest" time="0.04">
         </testcase>
     </testsuite>
 </testsuites>
 
-25465
+28793
