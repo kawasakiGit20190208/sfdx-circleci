@@ -1,8 +1,8 @@
 === Test Results
 TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
 ──────────────────  ───────  ───────  ────────────
-mytest.myUnitTest   Pass              23
-mytest.myUnitTest2  Pass              98
+mytest.myUnitTest   Pass              28
+mytest.myUnitTest2  Pass              35
 
 === Test Summary
 NAME                 VALUE
@@ -14,14 +14,14 @@ Failing              0
 Skipped              0
 Pass Rate            100%
 Fail Rate            0%
-Test Start Time      Mar 7, 2019 7:36 AM
-Test Execution Time  121 ms
-Test Total Time      121 ms
-Command Time         7035 ms
-Hostname             https://force-efficiency-6840-dev-ed.cs5.my.salesforce.com/
-Org Id               00DO000000565PYMAY
-Username             test-nngejciojj77@example.com
-Test Run Id          707O000001emzVd
-User Id              005O0000005z1Z1IAI
+Test Start Time      Mar 7, 2019 7:38 AM
+Test Execution Time  63 ms
+Test Total Time      63 ms
+Command Time         7284 ms
+Hostname             https://ruby-efficiency-2838-dev-ed.cs57.my.salesforce.com/
+Org Id               00D0k00000090ApEAI
+Username             test-gxjy347kb84r@example.com
+Test Run Id          7070k00000pf97R
+User Id              0050k000002ifN9AAI
 
-31387
+24780
