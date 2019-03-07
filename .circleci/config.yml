@@ -56,13 +56,14 @@ jobs:
           name: Run Apex Tests
           command: |
             mkdir -p ~/junit
-            sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
-      - run: echo $RANDOM >> result.txt
-      - run: git config user.email "mkawa0520@gmail.com"
-      - run: git config user.name "kawasakiGit20190208"
-      - run: git add result.txt
-      - run: git commit -m 'add test results'
-      - run: git push origin master;
+            sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 
+            #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
+      #- run: echo $RANDOM >> result.txt
+      #- run: git config user.email "mkawa0520@gmail.com"
+      #- run: git config user.name "kawasakiGit20190208"
+      #- run: git add result.txt
+      #- run: git commit -m 'add test results'
+      #- run: git push origin master;
 
 
       - store_test_results:
