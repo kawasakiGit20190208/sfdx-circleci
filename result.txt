@@ -2,11 +2,11 @@
 TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
 ──────────────────  ───────  ───────  ────────────
 mytest.myUnitTest   Pass              19
-mytest.myUnitTest2  Pass              25
+mytest.myUnitTest2  Pass              39
 
 === Test Summary
 NAME                 VALUE
-───────────────────  ─────────────────────────────────────────────────────
+───────────────────  ───────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            2
 Passing              2
@@ -14,14 +14,14 @@ Failing              0
 Skipped              0
 Pass Rate            100%
 Fail Rate            0%
-Test Start Time      Mar 7, 2019 7:34 AM
-Test Execution Time  44 ms
-Test Total Time      44 ms
-Command Time         6928 ms
-Hostname             https://app-drive-5129-dev-ed.cs5.my.salesforce.com/
-Org Id               00DO000000565OpMAI
-Username             test-wklgeawerj9c@example.com
-Test Run Id          707O000001emzCC
-User Id              005O0000005z1LqIAI
+Test Start Time      Mar 7, 2019 7:35 AM
+Test Execution Time  58 ms
+Test Total Time      58 ms
+Command Time         7271 ms
+Hostname             https://fun-nosoftware-4406-dev-ed.cs31.my.salesforce.com/
+Org Id               00Dp00000009XcoEAE
+Username             test-ttmhccfmeyai@example.com
+Test Run Id          707p0000013MIlS
+User Id              005p0000002p7xVAAQ
 
-12075
+12559
