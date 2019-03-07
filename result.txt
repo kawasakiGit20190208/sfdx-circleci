@@ -1,31 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-    <testsuite name="force.apex" timestamp="2019-03-04T08:17:35+00:00" hostname="https://java-energy-879-dev-ed.cs6.my.salesforce.com/" tests="2" failures="0"  errors="0"  time="0.06">
-        <properties>
-            <property name="outcome" value="Passed"/>
-            <property name="testsRan" value="2"/>
-            <property name="passing" value="2"/>
-            <property name="failing" value="0"/>
-            <property name="skipped" value="0"/>
-            <property name="passRate" value="100%"/>
-            <property name="failRate" value="0%"/>
-            <property name="testStartTime" value="Mar 4, 2019 8:17 AM"/>
-            <property name="testExecutionTime" value="0.06 s"/>
-            <property name="testTotalTime" value="0.06 s"/>
-            <property name="commandTime" value="8.16 s"/>
-            <property name="hostname" value="https://java-energy-879-dev-ed.cs6.my.salesforce.com/"/>
-            <property name="orgId" value="00DN0000000BmV2MAK"/>
-            <property name="username" value="test-emtqfz5lc43q@example.com"/>
-            <property name="testRunId" value="707N000002eQodX"/>
-            <property name="userId" value="005N0000006fIx3IAE"/>
-            <property name="testRunCoverage" value="100%"/>
-            <property name="orgWideCoverage" value="100%"/>
-        </properties>
-        <testcase name="myUnitTest" classname="mytest" time="0.02">
-        </testcase>
-        <testcase name="myUnitTest2" classname="mytest" time="0.04">
-        </testcase>
-    </testsuite>
-</testsuites>
+=== Test Results
+TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────  ───────  ───────  ────────────
+mytest.myUnitTest   Pass              19
+mytest.myUnitTest2  Pass              25
 
-28793
+=== Test Summary
+NAME                 VALUE
+───────────────────  ─────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            2
+Passing              2
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Mar 7, 2019 7:34 AM
+Test Execution Time  44 ms
+Test Total Time      44 ms
+Command Time         6928 ms
+Hostname             https://app-drive-5129-dev-ed.cs5.my.salesforce.com/
+Org Id               00DO000000565OpMAI
+Username             test-wklgeawerj9c@example.com
+Test Run Id          707O000001emzCC
+User Id              005O0000005z1LqIAI
+
+12075
