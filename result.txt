@@ -1,12 +1,12 @@
 === Test Results
 TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
 ──────────────────  ───────  ───────  ────────────
-mytest.myUnitTest   Pass              19
-mytest.myUnitTest2  Pass              39
+mytest.myUnitTest   Pass              23
+mytest.myUnitTest2  Pass              98
 
 === Test Summary
 NAME                 VALUE
-───────────────────  ───────────────────────────────────────────────────────────
+───────────────────  ────────────────────────────────────────────────────────────
 Outcome              Passed
 Tests Ran            2
 Passing              2
@@ -14,14 +14,14 @@ Failing              0
 Skipped              0
 Pass Rate            100%
 Fail Rate            0%
-Test Start Time      Mar 7, 2019 7:35 AM
-Test Execution Time  58 ms
-Test Total Time      58 ms
-Command Time         7271 ms
-Hostname             https://fun-nosoftware-4406-dev-ed.cs31.my.salesforce.com/
-Org Id               00Dp00000009XcoEAE
-Username             test-ttmhccfmeyai@example.com
-Test Run Id          707p0000013MIlS
-User Id              005p0000002p7xVAAQ
+Test Start Time      Mar 7, 2019 7:36 AM
+Test Execution Time  121 ms
+Test Total Time      121 ms
+Command Time         7035 ms
+Hostname             https://force-efficiency-6840-dev-ed.cs5.my.salesforce.com/
+Org Id               00DO000000565PYMAY
+Username             test-nngejciojj77@example.com
+Test Run Id          707O000001emzVd
+User Id              005O0000005z1Z1IAI
 
-12559
+31387
