@@ -67,6 +67,7 @@ jobs:
 
       - run:
           name: Upload Failed Tests
+          when: on_fail
           command: |
             echo 'Upload Failed Tests'
       - run: git config user.email "mkawa0520@gmail.com"
@@ -74,8 +75,8 @@ jobs:
       - run: echo $MESSAGE_FAIL >> result.txt
       - run: git add result.txt
       - run: git commit -m 'build [ci skip]'
-      - run: git push origin master
-          when: on_fail
+      - run: git push origin master;
+
 
       - store_test_results:
           path: ~/junit
