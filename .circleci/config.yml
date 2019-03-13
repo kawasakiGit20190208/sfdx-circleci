@@ -67,7 +67,6 @@ jobs:
 
       - run:
           name: Upload Failed Tests
-          when: on_fail
           command: |
             mkdir -p ~/junit
       - run: echo $MESSAGE_FAIL >> error.txt
