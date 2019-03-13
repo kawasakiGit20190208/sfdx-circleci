@@ -54,6 +54,7 @@ jobs:
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
       - run:
           name: Run Apex Tests
+          branch: testBranch
           command: |
             mkdir -p ~/junit
             sfdx force:apex:test:run -r human  --wait 5 > result.txt 
