@@ -73,7 +73,7 @@ jobs:
           when: on_fail
           command: |
             touch error.txt
-      - run: echo $MESSAGE_FAIL >> error.txt
+      - run: echo $BASH_ENV >> error.txt
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
       - run: git add error.txt
