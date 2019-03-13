@@ -69,10 +69,9 @@ jobs:
           name: Upload Failed Tests
           when: on_fail
           command: |
-      - run: echo 'Upload Failed Tests'
+      - run: echo $MESSAGE_FAIL >> error.txt
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
-      - run: echo $MESSAGE_FAIL >> error.txt
       - run: git add error.txt
       - run: git commit -m 'build [ci skip]'
       - run: git push origin master
