@@ -52,7 +52,8 @@ jobs:
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3 || echo "export TEST_RESULT_2=${?}" >> $BASH_ENV
             sfdx force:org:list --all
-            sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
+            #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
+            sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM || echo "export TEST_RESULT_3=${?}" >> $BASH_ENV
       - run:
           name: Run Apex Tests
           command: |
