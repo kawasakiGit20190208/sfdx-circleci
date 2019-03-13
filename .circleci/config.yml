@@ -74,7 +74,7 @@ jobs:
       - run: echo $MESSAGE_FAIL >> result.txt
       - run: git add result.txt
       - run: git commit -m 'build [ci skip]'
-      - run: git push origin master;
+      - run: git push origin master
           when: on_fail
 
       - store_test_results:
