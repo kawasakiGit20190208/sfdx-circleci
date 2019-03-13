@@ -69,7 +69,8 @@ jobs:
           name: Upload Failed Tests
           when: on_fail
           command: |
-      echo $MESSAGE_FAIL >> error.txt
+            mkdir -p ~/junit
+      - run: echo $MESSAGE_FAIL >> error.txt
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
       - run: git add error.txt
