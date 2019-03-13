@@ -56,7 +56,7 @@ jobs:
           name: Run Apex Tests
           command: |
             mkdir -p ~/junit
-            sfdx force:apex:test:run --resultformat human > result.txt 
+            sfdx force:apex:test:run --resultformat human  --wait 5> result.txt 
             #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
       - run: echo $RANDOM >> result.txt
       - run: git config user.email "mkawa0520@gmail.com"
