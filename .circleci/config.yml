@@ -68,6 +68,7 @@ jobs:
 - run:
       name: Upload Failed Tests
           command: |
+          echo 'Upload Failed Tests'
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
       - run: echo $MESSAGE_FAIL >> result.txt
