@@ -54,7 +54,6 @@ jobs:
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
       - run:
           name: Run Apex Tests
-          branch: testBranch
           command: |
             mkdir -p ~/junit
             sfdx force:apex:test:run -r human  --wait 5 > result.txt 
@@ -64,7 +63,7 @@ jobs:
       - run: git config user.name "kawasakiGit20190208"
       - run: git add result.txt
       - run: git commit -m 'add test results'
-      - run: git push origin master;
+      - run: git push origin testBranch;
 
       - store_test_results:
           path: ~/junit
