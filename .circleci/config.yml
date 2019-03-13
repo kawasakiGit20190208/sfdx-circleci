@@ -65,8 +65,8 @@ jobs:
       - run: git commit -m 'build [ci skip]'
       - run: git push origin master;
 
-- run:
-      name: Upload Failed Tests
+      - run:
+          name: Upload Failed Tests
           command: |
           echo 'Upload Failed Tests'
       - run: git config user.email "mkawa0520@gmail.com"
