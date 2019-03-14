@@ -1,5 +1,5 @@
 TEST START
 AUTH SUCCESS
 JOB FAILED! CONFIRM CIRCLE CI
-/tmp/.bash_env-5c89ebc57858110008ba84b5-0-build
+/tmp/.bash_env-5c89ec48d78e110008c04445-0-build
 
