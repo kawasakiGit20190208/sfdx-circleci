@@ -4,3 +4,6 @@
 https://circleci.com/gh/kawasakiGit20190208/sfdx-circleci/126
 
 build
+
+build
+
