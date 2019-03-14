@@ -82,7 +82,7 @@ jobs:
           when: on_fail
           command: |
              echo "JOB FAILED! CONFIRM CIRCLE CI" >> result.txt
-             force:source:status >> result.txt
+             sfdx force:source:status >> result.txt
              
              git config user.email "mkawa0520@gmail.com"
              git config user.name "kawasakiGit20190208"
