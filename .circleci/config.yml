@@ -81,7 +81,7 @@ jobs:
       - run: echo $BASH_ENV >> result.txt
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
-      - run: git add error.txt
+      - run: git add result.txt
       - run: git commit -m 'build [ci skip]'
       - run: git push origin master;
 
