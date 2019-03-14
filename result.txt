@@ -10,3 +10,6 @@ build
 export TEST_MESSAGE=
 build
 
+export TEST_MESSAGE=AUTH SUCCESS
+build
+AUTH
