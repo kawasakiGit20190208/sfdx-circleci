@@ -89,7 +89,7 @@ jobs:
           name: Upload Failed Tests
           when: on_fail
           command: |
-             echo "JOB FAILED! CONFIRM CIRCLE CI" >> result.txt
+             echo "テスト実行に失敗しました。ログとCIRCLE CIを確認してください。" >> result.txt
              git config user.email "mkawa0520@gmail.com"
              git config user.name "kawasakiGit20190208"
              git add result.txt
