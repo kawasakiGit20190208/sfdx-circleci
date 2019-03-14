@@ -45,7 +45,7 @@ jobs:
           #- sfdx force:auth:jwt:grant --clientid $DEPLOY_CONSUMER_KEY --jwtkeyfile keys/deploy.key --username $DEPLOY_SFDC_USER -a deploy
       - run:
           name: Setup Org
-          command: |a
+          command: |
             echo "==============================" > result.txt
             echo "1.TEST START" >> result.txt
             echo "2.AUTH SUCCESS" >> result.txt
