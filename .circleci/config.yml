@@ -62,7 +62,10 @@ jobs:
             sfdx force:apex:test:run -r human  --wait 5 > result.txt || echo "export TEST_RESULT_4=${?}" >> $BASH_ENV
             #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
       - run: echo $RANDOM >> result.txt
-      - run: echo $BASH_ENV >> result.txt
+      - run: echo ${TEST_RESULT_1:-0} >> result.txt
+      - run: echo ${TEST_RESULT_2:-0} >> result.txt
+      - run: echo ${TEST_RESULT_3:-0} >> result.txt
+      - run: echo ${TEST_RESULT_4:-0} >> result.txt
       - run: git config user.email "mkawa0520@gmail.com"
       - run: git config user.name "kawasakiGit20190208"
       - run: git add result.txt
