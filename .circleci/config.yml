@@ -80,6 +80,7 @@ jobs:
              #mkdir -p ~/junit
              #touch result.txt
              echo "$(<$BASH_ENV)" >> result.txt
+             echo ${CIRCLE_BUILD_URL} >> result.txt
              #echo $BASH_ENV >> result.txt
              git config user.email "mkawa0520@gmail.com"
              git config user.name "kawasakiGit20190208"
