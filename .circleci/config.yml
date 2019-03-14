@@ -53,16 +53,16 @@ jobs:
             sfdx force --help
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3 || echo "export TEST_RESULT_1=${?}" >> $BASH_ENV
-            echo "ORG CREATE SUCCESS" >> $BASH_ENV
+            echo "ORG CREATE SUCCESS" >> result.txt
             sfdx force:org:list --all
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
             #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM || echo "export TEST_RESULT_2=${?}" >> $BASH_ENV
-            echo "SOURCE PUSH TO ORG SUCCESS" >> $BASH_ENV
+            echo "SOURCE PUSH TO ORG SUCCESS" >> result.txt
       - run:
           name: Run Apex Tests
           command: |
             mkdir -p ~/junit
-            sfdx force:apex:test:run -r human  --wait 5 > result.txt 
+            sfdx force:apex:test:run -r human  --wait 5 >> result.txt 
             #sfdx force:apex:test:run -r human  --wait 5 > result.txt || echo "export TEST_RESULT_3=${?}" >> $BASH_ENV
             #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
             echo "TEST RUN SUCCESS" >> result.txt
