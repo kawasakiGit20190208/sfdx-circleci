@@ -52,8 +52,8 @@ jobs:
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3 || echo "export TEST_RESULT_1=${?}" >> $BASH_ENV
             sfdx force:org:list --all
-            #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
-            sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM || echo "export TEST_RESULT_2=${?}" >> $BASH_ENV
+            sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
+            #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM || echo "export TEST_RESULT_2=${?}" >> $BASH_ENV
       - run:
           name: Run Apex Tests
           command: |
@@ -72,17 +72,17 @@ jobs:
       - run: git push origin master;
 
 
-      - run:
-          name: Upload Failed Tests
-          when: on_fail
-          command: |
-            touch error.txt
-      - run: echo $BASH_ENV >> error.txt
-      - run: git config user.email "mkawa0520@gmail.com"
-      - run: git config user.name "kawasakiGit20190208"
-      - run: git add error.txt
-      - run: git commit -m 'build [ci skip]'
-      - run: git push origin master;
+#      - run:
+#          name: Upload Failed Tests
+#          when: on_fail
+#          command: |
+#            touch error.txt
+#      - run: echo $BASH_ENV >> error.txt
+#      - run: git config user.email "mkawa0520@gmail.com"
+#      - run: git config user.name "kawasakiGit20190208"
+#      - run: git add error.txt
+#      - run: git commit -m 'build [ci skip]'
+#      - run: git push origin master;
 
 
       - store_test_results:
