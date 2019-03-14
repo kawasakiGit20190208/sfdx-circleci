@@ -13,3 +13,6 @@ build
 export TEST_MESSAGE=AUTH SUCCESS
 build
 AUTH
+export =AUTH SUCCESS
+build
+
