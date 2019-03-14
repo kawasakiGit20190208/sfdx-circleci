@@ -78,11 +78,11 @@ jobs:
           when: on_fail
           command: |
              #mkdir -p ~/junit
-             touch result.txt
-             echo | cat $BASH_ENV >> result.txt
+             #touch result.txt
+             #echo | cat $BASH_ENV >> result.txt
+             echo $BASH_ENV >> result.txt
              git config user.email "mkawa0520@gmail.com"
              git config user.name "kawasakiGit20190208"
-             git pull origin master;
              git add result.txt
              git commit -m 'build [ci skip]'
              git push origin master;
