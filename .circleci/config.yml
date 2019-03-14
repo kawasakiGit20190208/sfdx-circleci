@@ -47,6 +47,7 @@ jobs:
           name: Setup Org
           command: |
             echo "==============================" > result.txt
+            echo "以下の順番で処理を行います。" >> result.txt
             echo "1.テスト開始" >> result.txt
             echo "2.認証成功" >> result.txt
             echo "3.スクラッチ組織作成 SUCCESS" >> result.txt
