@@ -77,14 +77,14 @@ jobs:
           name: Upload Failed Tests
           when: on_fail
           command: |
-             mkdir -p ~/junit
-             - run: touch result.txt
-             - run: echo $BASH_ENV >> result.txt
-             - run: git config user.email "mkawa0520@gmail.com"
-             - run: git config user.name "kawasakiGit20190208"
-             - run: git add result.txt
-             - run: git commit -m 'build [ci skip]'
-             - run: git push origin master;
+             #mkdir -p ~/junit
+             touch result.txt
+             echo $BASH_ENV >> result.txt
+             git config user.email "mkawa0520@gmail.com"
+             git config user.name "kawasakiGit20190208"
+             git add result.txt
+             git commit -m 'build [ci skip]'
+             git push origin master;
 
 
       - store_test_results:
