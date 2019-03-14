@@ -65,34 +65,29 @@ jobs:
             #sfdx force:apex:test:run -r human  --wait 5 > result.txt || echo "export TEST_RESULT_3=${?}" >> $BASH_ENV
             #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
             echo "TEST RUN SUCCESS" >> $BASH_ENV
-      - run: echo $RANDOM >> result.txt
-      #- run: echo ${TEST_RESULT_1:-0} >> result.txt
-      #- run: echo ${TEST_RESULT_2:-0} >> result.txt
-      #- run: echo ${TEST_RESULT_3:-0} >> result.txt
-      - run: echo $BASH_ENV >> result.txt
-      - run: git config user.email "mkawa0520@gmail.com"
-      - run: git config user.name "kawasakiGit20190208"
-      - run: git add result.txt
-      - run: git commit -m 'build [ci skip]'
-      - run: git push origin master;
+            #echo ${TEST_RESULT_1:-0} >> result.txt
+            #echo ${TEST_RESULT_2:-0} >> result.txt
+            #echo ${TEST_RESULT_3:-0} >> result.txt
+            echo $BASH_ENV >> result.txt
+            git config user.email "mkawa0520@gmail.com"
+            git config user.name "kawasakiGit20190208"
+            git add result.txt
+            git commit -m 'build [ci skip]'
+            git push origin master;
+            echo "RESULT PUSH TO GIT SUCCESS" >> $BASH_ENV
 
 
       - run:
           name: Upload Failed Tests
           when: on_fail
           command: |
-             #mkdir -p ~/junit
-             #touch result.txt
-             echo "$(<$BASH_ENV)" > result.txt
-             echo ${CIRCLE_STAGE} >> result.txt
-             echo ${TEST_MESSAGE} >> result.txt
+             echo "JOB FAILED! CONFIRM CIRCLE CI" >> $BASH_ENV
              echo $BASH_ENV >> result.txt
              git config user.email "mkawa0520@gmail.com"
              git config user.name "kawasakiGit20190208"
              git add result.txt
              git commit -m 'build [ci skip]'
              git push origin master;
-
 
       - store_test_results:
           path: ~/junit
