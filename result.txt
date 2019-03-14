@@ -9,4 +9,32 @@
 ==============================
 1.テスト開始
 2.認証成功
-テスト実行に失敗しました。ログとCIRCLE CIを確認してください。
+3.スクラッチ組織作成 SUCCESS
+4.リソースを組織にプッシュ SUCCESS
+=== Test Results
+TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────  ───────  ───────  ────────────
+mytest.myUnitTest   Pass              15
+mytest.myUnitTest2  Pass              29
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ──────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            2
+Passing              2
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Mar 14, 2019 6:45 AM
+Test Execution Time  44 ms
+Test Total Time      44 ms
+Command Time         7346 ms
+Hostname             https://velocity-java-9234-dev-ed.cs58.my.salesforce.com/
+Org Id               00D0l0000009hc8EAA
+Username             test-0bcnhiwxhjk7@example.com
+Test Run Id          7070l00001Djk6K
+User Id              0050l000002wspUAAQ
+
+5.テスト実行 SUCCESS
