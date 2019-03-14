@@ -1,11 +1,11 @@
 ==============================
-1.TEST START
-2.AUTH SUCCESS
-3.ORG CREATE SUCCESS
-4.SOURCE PUSH TO ORG SUCCESS
-5.TEST RUN SUCCESS
-6.RESULT PUSH TO GIT SUCCESS
+1.テスト開始
+2.認証成功
+3.スクラッチ組織作成 SUCCESS
+4.リソースを組織にプッシュ SUCCESS
+5.テスト実行 SUCCESS
+6.テスト結果をGitにプッシュ SUCCESS
 ==============================
-1.TEST START
-2.AUTH SUCCESS
+1.テスト開始
+2.認証成功
 JOB FAILED! CONFIRM CIRCLE CI
