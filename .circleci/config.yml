@@ -47,25 +47,25 @@ jobs:
           name: Setup Org
           command: |
             echo "==============================" > result.txt
-            echo "1.TEST START" >> result.txt
-            echo "2.AUTH SUCCESS" >> result.txt
-            echo "3.ORG CREATE SUCCESS" >> result.txt
-            echo "4.SOURCE PUSH TO ORG SUCCESS" >> result.txt
-            echo "5.TEST RUN SUCCESS" >> result.txt
-            echo "6.RESULT PUSH TO GIT SUCCESS" >> result.txt
+            echo "1.テスト開始" >> result.txt
+            echo "2.認証成功" >> result.txt
+            echo "3.スクラッチ組織作成 SUCCESS" >> result.txt
+            echo "4.リソースを組織にプッシュ SUCCESS" >> result.txt
+            echo "5.テスト実行 SUCCESS" >> result.txt
+            echo "6.テスト結果をGitにプッシュ SUCCESS" >> result.txt
             echo "==============================" >> result.txt
             echo 'Running tests'
-            echo "1.TEST START" >> result.txt
+            echo "1.テスト開始" >> result.txt
             sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub
-            echo "2.AUTH SUCCESS" >> result.txt
+            echo "2.認証成功" >> result.txt
             sfdx force --help
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3 || echo "export TEST_RESULT_1=${?}" >> $BASH_ENV
-            echo "3.ORG CREATE SUCCESS" >> result.txt
+            echo "3.スクラッチ組織作成 SUCCESS" >> result.txt
             sfdx force:org:list --all
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
             #sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM || echo "export TEST_RESULT_2=${?}" >> $BASH_ENV
-            echo "4.SOURCE PUSH TO ORG SUCCESS" >> result.txt
+            echo "4.リソースを組織にプッシュ SUCCESS" >> result.txt
       - run:
           name: Run Apex Tests
           command: |
@@ -73,7 +73,7 @@ jobs:
             sfdx force:apex:test:run -r human  --wait 5 >> result.txt 
             #sfdx force:apex:test:run -r human  --wait 5 > result.txt || echo "export TEST_RESULT_3=${?}" >> $BASH_ENV
             #sfdx force:apex:test:run -c -d ~/junit -r junit --wait 5 > result.txt
-            echo "5.TEST RUN SUCCESS" >> result.txt
+            echo "5.テスト実行 SUCCESS" >> result.txt
             #echo ${TEST_RESULT_1:-0} >> result.txt
             #echo ${TEST_RESULT_2:-0} >> result.txt
             #echo ${TEST_RESULT_3:-0} >> result.txt
@@ -82,7 +82,7 @@ jobs:
             git add result.txt
             git commit -m 'build [ci skip]'
             git push origin master;
-            echo "6.RESULT PUSH TO GIT SUCCESS" >> result.txt
+            echo "6.テスト結果をGitにプッシュ SUCCESS" >> result.txt
 
 
       - run:
