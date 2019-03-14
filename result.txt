@@ -1,4 +1,4 @@
-export AUTH SUCCESS
+AUTH SUCCESS
 build
 
-/tmp/.bash_env-5c89d9926884ec000839abad-0-build
+/tmp/.bash_env-5c89db12b4ba96000853a1eb-0-build
