@@ -48,7 +48,7 @@ jobs:
           command: |
             echo 'Running tests'
             sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a DevHub
-            echo "export TEST_MESSAGE=`AUTH SUCCESS`" >> $BASH_ENV
+            echo "export $TEST_MESSAGE=`AUTH SUCCESS`" >> $BASH_ENV
             sfdx force --help
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             #sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3 || echo "export TEST_RESULT_1=${?}" >> $BASH_ENV
