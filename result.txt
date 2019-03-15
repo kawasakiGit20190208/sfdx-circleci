@@ -8,39 +8,4 @@
 ==============================
 1.テスト開始
 2.認証成功
-3.スクラッチ組織作成 SUCCESS
-4.リソースを組織にプッシュ SUCCESS
-=== Test Results
-TEST NAME           OUTCOME  MESSAGE                                                                   RUNTIME (MS)
-──────────────────  ───────  ────────────────────────────────────────────────────────────────────────  ────────────
-mytest.myUnitTest   Fail     System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0  18
-                             Class.mytest.myUnitTest: line 7, column 1
-mytest.myUnitTest2  Pass                                                                               38
-
-=== Failures
-FULLNAME           MESSAGE
-─────────────────  ────────────────────────────────────────────────────────────────────────
-mytest.myUnitTest  System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0
-                   /home/circleci/ci_app/force-app/main/default/classes/mytest.cls:7:1
-
-=== Test Summary
-NAME                 VALUE
-───────────────────  ────────────────────────────────────────────────────────
-Outcome              Failed
-Tests Ran            2
-Passing              1
-Failing              1
-Skipped              0
-Pass Rate            50%
-Fail Rate            50%
-Test Start Time      Mar 15, 2019 1:49 AM
-Test Execution Time  56 ms
-Test Total Time      56 ms
-Command Time         6742 ms
-Hostname             https://force-drive-4163-dev-ed.cs58.my.salesforce.com/
-Org Id               00D0l0000009hflEAA
-Username             test-yurttnrcuxpw@example.com
-Test Run Id          7070l00001DlVZR
-User Id              0050l000002wtQqAAI
-
 テスト実行に失敗しました。ログとCIRCLE CIを確認してください。
