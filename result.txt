@@ -12,29 +12,69 @@
 3.スクラッチ組織作成 SUCCESS
 4.リソースを組織にプッシュ SUCCESS
 === Test Results
-TEST NAME           OUTCOME  MESSAGE  RUNTIME (MS)
-──────────────────  ───────  ───────  ────────────
-mytest.myUnitTest   Pass              15
-mytest.myUnitTest2  Pass              29
+TEST NAME           OUTCOME  MESSAGE                                                                   RUNTIME (MS)
+──────────────────  ───────  ────────────────────────────────────────────────────────────────────────  ────────────
+mytest.myUnitTest   Fail     System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0  16
+                             Class.mytest.myUnitTest: line 7, column 1
+mytest.myUnitTest2  Pass                                                                               35
+
+=== Failures
+FULLNAME           MESSAGE
+─────────────────  ────────────────────────────────────────────────────────────────────────
+mytest.myUnitTest  System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0
+                   /home/circleci/ci_app/force-app/main/default/classes/mytest.cls:7:1
 
 === Test Summary
 NAME                 VALUE
-───────────────────  ──────────────────────────────────────────────────────────
-Outcome              Passed
+───────────────────  ────────────────────────────────────────────────────────────
+Outcome              Failed
 Tests Ran            2
-Passing              2
-Failing              0
+Passing              1
+Failing              1
 Skipped              0
-Pass Rate            100%
-Fail Rate            0%
-Test Start Time      Mar 14, 2019 6:45 AM
-Test Execution Time  44 ms
-Test Total Time      44 ms
-Command Time         7346 ms
-Hostname             https://velocity-java-9234-dev-ed.cs58.my.salesforce.com/
-Org Id               00D0l0000009hc8EAA
-Username             test-0bcnhiwxhjk7@example.com
-Test Run Id          7070l00001Djk6K
-User Id              0050l000002wspUAAQ
+Pass Rate            50%
+Fail Rate            50%
+Test Start Time      Mar 14, 2019 6:49 AM
+Test Execution Time  51 ms
+Test Total Time      51 ms
+Command Time         21733 ms
+Hostname             https://ability-velocity-3321-dev-ed.cs5.my.salesforce.com/
+Org Id               00DO000000566kwMAA
+Username             test-d5bczon9riob@example.com
+Test Run Id          707O000001fhILF
+User Id              005O00000063DcmIAE
 
-5.テスト実行 SUCCESS
+=== Test Results
+TEST NAME           OUTCOME  MESSAGE                                                                   RUNTIME (MS)
+──────────────────  ───────  ────────────────────────────────────────────────────────────────────────  ────────────
+mytest.myUnitTest   Fail     System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0  16
+                             Class.mytest.myUnitTest: line 7, column 1
+mytest.myUnitTest2  Pass                                                                               35
+
+=== Failures
+FULLNAME           MESSAGE
+─────────────────  ────────────────────────────────────────────────────────────────────────
+mytest.myUnitTest  System.AssertException: Assertion Failed: Expected: 1.0.2, Actual: 1.0.0
+                   /home/circleci/ci_app/force-app/main/default/classes/mytest.cls:7:1
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ────────────────────────────────────────────────────────────
+Outcome              Failed
+Tests Ran            2
+Passing              1
+Failing              1
+Skipped              0
+Pass Rate            50%
+Fail Rate            50%
+Test Start Time      Mar 14, 2019 6:49 AM
+Test Execution Time  51 ms
+Test Total Time      51 ms
+Command Time         22077 ms
+Hostname             https://ability-velocity-3321-dev-ed.cs5.my.salesforce.com/
+Org Id               00DO000000566kwMAA
+Username             test-d5bczon9riob@example.com
+Test Run Id          707O000001fhILF
+User Id              005O00000063DcmIAE
+
+テスト実行に失敗しました。ログとCIRCLE CIを確認してください。
