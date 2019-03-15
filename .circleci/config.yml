@@ -50,10 +50,9 @@ jobs:
             echo "以下の順番で処理を行います。" >> result.txt
             echo "1.テスト開始" >> result.txt
             echo "2.認証成功" >> result.txt
-            echo "3.スクラッチ組織作成 SUCCESS" >> result.txt
-            echo "4.リソースを組織にプッシュ SUCCESS" >> result.txt
-            echo "5.テスト実行 SUCCESS" >> result.txt
-            echo "6.テスト結果をGitにプッシュ SUCCESS" >> result.txt
+            echo "3.スクラッチ組織作成" >> result.txt
+            echo "4.リソースを組織にプッシュ" >> result.txt
+            echo "5.テスト実行" >> result.txt
             echo "==============================" >> result.txt
             echo 'Running tests'
             echo "1.テスト開始" >> result.txt
@@ -83,7 +82,6 @@ jobs:
             git add result.txt
             git commit -m 'build [ci skip]'
             git push origin master;
-            echo "6.テスト結果をGitにプッシュ SUCCESS" >> result.txt
 
       - run:
           name: Upload Failed Tests
